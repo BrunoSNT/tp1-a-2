@@ -7,6 +7,7 @@ Salario = salarios
 
 Empregados por Horas
 Salario = salarios + horas Extras
+
 Empregados Comissionados
 Salario = taxa de vendas *vendas
 
