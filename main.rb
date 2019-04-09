@@ -7,7 +7,7 @@ load 'empregado_salario_comissao.rb'
 _eHora = EmpregadoHora.new "Joao", "Rocha", 000000 , 20, 40
 _eAssalariado = EmpregadoAssalariado.new "Bruno", "Barros", 111111 , 4200 
 _eComissionado = EmpregadoComissionado.new "Pedro", "Silva", 222222 , 50000, 0.07
-_eAssalariadoComissionado = EmpregadoAssalariadoComissionado.new "Jose", "Santos", 333333 , 2000, 45000, 0.05
+_eAssalariadoComissionado = EmpregadoAssalariadoComissionado.new "Jose", "Santos", 333333 , 45000, 0.05, 1500
 
 
 puts '###########################'
