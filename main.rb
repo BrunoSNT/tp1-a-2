@@ -18,7 +18,7 @@ puts "#  + Nome: #{_eHora.nome}"
 puts "#  + Sobrenome: #{_eHora.sobrenome}"
 puts "#  + NSS: #{_eHora.nss}"
 puts "#  + Salario: #{_eHora.salario}\n"
-puts ""
+puts "" 
 puts '###########################'
 puts '#  Empregado Assalariado  #'
 puts '__________________________'
@@ -27,6 +27,7 @@ puts "#  + Nome: #{_eAssalariado.nome}"
 puts "#  + Sobrenome: #{_eAssalariado.sobrenome}"
 puts "#  + NSS: #{_eAssalariado.nss}"
 puts "#  + Salario: #{_eAssalariado.salario}"
+puts "#  + Novo Salario: #{_eAssalariado.salario}"
 puts ""
 puts '###########################'
 puts '#  Empregado Comississao  #'
@@ -44,5 +45,42 @@ puts ""
 puts "#  + Nome: #{_eAssalariadoComissionado.nome}"
 puts "#  + Sobrenome: #{_eAssalariadoComissionado.sobrenome}"
 puts "#  + NSS:#{ _eAssalariadoComissionado.nss}"
-puts "#  + Salario: #{_eAssalariadoComissionado.salario.round}"
+puts "#  + Salario: #{_eAssalariadoComissionado.salario}"
 puts ""
+puts '###########################'
+puts '#    EXEMPLO - SETTERS    #'
+puts "#                         #"
+        _eAssalariadoComissionado.nome= "Jonas"
+        _eAssalariadoComissionado.sobrenome= "Neves"
+        _eAssalariadoComissionado.nss= 666666
+        _eAssalariadoComissionado.salariosemanal= 5000
+        _eAssalariadoComissionado.valor_vendas= 50000
+        _eAssalariadoComissionado.taxa_comissao= 0.05
+
+puts '__________________________'
+puts '#     Empregado A/C       #'
+puts '#   DEPOIS DOS SETTERS    #'
+puts '__________________________'
+puts ""
+puts "#  + Nome novo: #{_eAssalariadoComissionado.nome}"
+puts "#  + Sobrenome novo: #{_eAssalariadoComissionado.sobrenome}"
+puts "#  + NSS novo :#{ _eAssalariadoComissionado.nss}"
+puts "#  + Salario novo: #{_eAssalariadoComissionado.salario}"
+puts "#"
+puts '#_________________________'
+puts "#                         #"
+puts "#    SALARIO SET UNICO    # "
+puts '#_________________________#'
+puts "#"
+_eAssalariadoComissionado.salario= 5000, 0.1, 50000
+puts "#  + Salario novo - AC: #{_eAssalariadoComissionado.salario}"
+puts "#"
+puts "#"
+_eComissionado.salario= 0.1, 50000
+puts "#  + Salario novo - Empregado por Comissao: #{_eComissionado.salario}"
+puts "#"
+puts "#"
+_eHora.salario= 60, 40
+puts "#  + Salario novo - Empregado por Hora: #{_eHora.salario}"
+puts "#"
+

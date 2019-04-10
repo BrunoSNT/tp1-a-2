@@ -5,37 +5,35 @@ class Empregado
       @nss = nss  
     end
     
+    #ABSTRACT METHODS // ERRO SE FOREM CHAMADOS SEM OVERRIDE
     def nome 
-        @nome
+      raise NoMethodError("AbstractClassError: Override this implementation")
     end
 
     def sobrenome
-        @sobrenome
+      raise NoMethodError("AbstractClassError: Override this implementation")
     end
 
     def nss
-        @nss
+      raise NoMethodError("AbstractClassError: Override this implementation")
     end
 
     def salario
-        @salario
+      raise NoMethodError("AbstractClassError: Override this implementation")
     end
 
     def nome= nome 
-        @nome = nome
+      raise NoMethodError("AbstractClassError: Override this implementation")
     end
 
     def sobrenome= sobrenome
-        @sobrenome = sobrenome
-    end
+      raise NoMethodError("AbstractClassError: Override this implementation")    end
 
     def nss= nss
-        @nss = nss
-    end
+      raise NoMethodError("AbstractClassError: Override this implementation")    end
 
     def salario= salario
-        @salario = salario
-    end
+      raise NoMethodError("AbstractClassError: Override this implementation")    end
 end  
 
     
